@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import Vehicule from '../../components/vehicule';
 import VehiculeForm from '../../components/vehiculeForm';
 import PleinForm from '../../components/pleinForm';
-import Consommation from '../../components/consommation';
+import Consommation from '../../components/temp';
 import CoutJournalier from '../../components/coutJournalier';
 import KmsJournalier from '../../components/kmsJournalier';
 import PrixAuLitre from '../../components/prixAuLitre';
