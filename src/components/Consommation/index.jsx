@@ -30,7 +30,7 @@ function Consommation({ vehicule }) {
       }
     });
     setConsoPlein(tableau);
-  }, [pleins]);
+  }, []);
 
   useEffect(() => {
     const tableau = [];
