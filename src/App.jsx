@@ -1,14 +1,19 @@
-import './styles/bootstrap.scss'
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
-import Home from './pages/home'
-import VehiculePage from './pages/vehiculePage'
-import Header from './components/header'
-import Footer from './components/footer'
+import './styles/bootstrap.scss';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from 'react-router-dom';
+import Home from './pages/home';
+import VehiculePage from './pages/vehiculePage';
+import Header from './components/header';
+import Footer from './components/footer';
 
 function App() {
   return (
     <>
-      <Router basename="/car_Manager">
+      <Router>
         <div className="d-flex flex-column min-vh-100">
           <Header />
           <Routes>
@@ -20,6 +25,6 @@ function App() {
         </div>
       </Router>
     </>
-  )
+  );
 }
-export default App
+export default App;
