@@ -1,0 +1,20 @@
+// Import des fonctions
+@import 'bootstrap/scss/functions';
+
+// 🌈 Personnalise ici les variables Bootstrap si tu veux
+// Exemple :
+$primary: #d96f4e; // accent terre cuite
+$success: #4caf50; // vert doux naturel
+$warning: #f28500; // orange doux
+$danger: #c9302c; // rouge vif plus contrasté
+$info: #a5c8ca; // bleuté doux en lien avec la bannière
+
+$body-bg: #faf3ed; // fond chaud clair
+$body-color: #2b2b2b; // texte lisible foncé
+$light: #fefcf9; // fond très clair pour bg-light
+$dark: #1c1c1c; // fond très foncé pour bg-dark
+
+// Puis importe les autres parties de Bootstrap& variables Bootstrap
+@import 'bootstrap/scss/variables';
+
+@import 'bootstrap/scss/bootstrap';

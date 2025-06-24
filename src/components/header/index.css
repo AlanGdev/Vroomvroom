@@ -1,0 +1,17 @@
+.navbar-vroom {
+  background-image: url('../../assets/header-banner.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 120px;
+}
+.navbar-collapse {
+  /*position: absolute !important;
+  top: 100%;
+  left: 0;*/
+  width: 100%;
+  background-color: #f9fafb;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
