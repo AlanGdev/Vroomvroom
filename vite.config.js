@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/car_Manager/', // ← ← ← ajoute cette ligne !
+  base: '/VroomTrack-Suivi-vehicule/', // ← ← ← ajoute cette ligne !
   plugins: [react()],
   server: {
     historyApiFallback: true,
@@ -12,4 +12,4 @@ export default defineConfig({
       input: './index.html',
     },
   },
-})
+});
