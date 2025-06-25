@@ -9,6 +9,7 @@ function PleinForm({ vehicule, maj }) {
     kilometrage: '',
     volume: '',
     prix: '',
+    commentaire: '',
   });
   const pleins = vehicule?.pleins || [];
 
@@ -21,6 +22,13 @@ function PleinForm({ vehicule, maj }) {
     });
 
     maj('pleins', newDatas);
+    setDatas({
+      date: '',
+      kilometrage: '',
+      volume: '',
+      prix: '',
+      commentaire: '',
+    });
     setShowModal(false);
   };
 
@@ -96,7 +104,11 @@ function PleinForm({ vehicule, maj }) {
                 onChange={handleChange}
                 required
                 rows={3}
+                maxLength={100}
               />
+              <div style={{ fontSize: '12px', textAlign: 'right' }}>
+                {datas.commentaire.length}/100 caractères
+              </div>
             </Form.Group>
             <Button type="submit">Valider</Button>
           </Form>
