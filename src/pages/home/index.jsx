@@ -7,6 +7,7 @@ import Consommation from '../../components/consommation';
 import CoutJournalier from '../../components/coutJournalier';
 import KmsJournalier from '../../components/kmsJournalier';
 import PrixAuLitre from '../../components/prixAuLitre';
+import HistoPleins from '../../components/histoPleins';
 //import fichier from '../../assets/vehicule_honda_civic_sport.json'
 
 function Home() {
@@ -35,6 +36,9 @@ function Home() {
             <Col xs={3} className="flex-grow-1">
               <PleinForm vehicule={vehicule} maj={maj} />
             </Col>
+          </Row>
+          <Row>
+            <HistoPleins vehicule={vehicule} />
           </Row>
           <Row className="g-2 mb-2">
             <Col md={6}>

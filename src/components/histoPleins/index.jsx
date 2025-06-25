@@ -30,16 +30,20 @@ function HistoPleins({ vehicule, suppressionPlein }) {
             <Card className="m-4 flex-grow-1">
               <Card.Body>
                 <Card.Title>{`Le ${formatedDate(plein.date)} à ${plein.kilometrage}`}</Card.Title>
-                <Card.Text>{`${plein.volume} L. pour ${plein.prix} €`}</Card.Text>
+                <Card.Text>
+                  {`${plein.volume} L. pour ${plein.prix} €`}
+                  <br />
+                  {plein.commentaire && plein.commentaire}
+                </Card.Text>
               </Card.Body>
             </Card>
-            <Button
+            {/*<Button
               className="my-4"
               variant="outline-warning"
               onClick={() => suppPlein(index)}
             >
               Suppression du plein
-            </Button>
+            </Button>*/}
           </div>
         ))}
     </>

@@ -86,6 +86,18 @@ function PleinForm({ vehicule, maj }) {
                 required
               />
             </Form.Group>
+            <Form.Group className="mb-2">
+              <Form.Control
+                as="textarea"
+                placeholder="Commentaire"
+                type="string"
+                name="commentaire"
+                value={datas.commentaire}
+                onChange={handleChange}
+                required
+                rows={3}
+              />
+            </Form.Group>
             <Button type="submit">Valider</Button>
           </Form>
         </Modal.Body>
